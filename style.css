@@ -8,12 +8,16 @@ body {
 }
 
 .navbar {
+    background-color: white;
+    z-index: 2;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid black 1px;
     gap: 10px;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar__s1 {
@@ -26,6 +30,7 @@ body {
     padding: 10px;
     border-radius: 30px;
     display: flex;
+    background-color: transparent;
 }
 
 .navbar__s2 input {
@@ -37,6 +42,25 @@ body {
 .navbar__s3 {
     display: flex;
     gap: 20px;
+}
+.learning{
+    position: relative;
+    cursor: pointer;
+}
+.learning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+    border-radius: 20px;
+
+}
+.learning:hover .learning__popup{
+    display: block;
 }
 
 .catogary {
@@ -58,6 +82,26 @@ body {
 
 .sale img {
     width: 100%;
+    
+}
+.sale{
+    position: relative;
+}
+.sale__offer{
+    background-color: rgba(219, 79, 79, 0.678);
+
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+    width: 200px;
+    position: absolute;
+    top:80px;
+    left: 100px;
+
+}
+
+.sale__offer h2{
+    padding-bottom: 10px;
 }
 
 .recommend {
